@@ -29,12 +29,12 @@
         var dishesArr = dishes.split(",");
         angular.forEach(dishesArr, function(value, key) {
           console.log("value: " + value);
-          if(!!value) {
-            console.log("!!value: " + !!value);
+          if(!value || value == " ") {
+            console.log("Remove the value: " + value);
             dishesArr.splice(key, 1);
           }
-          return dishesArr.length;
         });
+        return dishesArr.length;
       }
     }
 })();

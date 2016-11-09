@@ -11,7 +11,9 @@
 <body ng-app="LunchCheck">
    <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
-
+        <div class="alert alert-info" role="alert">
+          I do NOT consider and empty item, i.e.<code>, ,</code> , as an item towards to the count
+        </div>
          <div class="form-group">
              <input id="lunch-menu" ng-model="dishes" name="dishes" type="text" placeholder="list comma separated dishes you usually have for lunch" class="form-control">
          </div>
